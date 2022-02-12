@@ -1,99 +1,99 @@
 {
-	"name": "smartmulticursor",
-	"displayName": "Smart Multi-cursor",
-	"description": "Context enhanced multi-cursor",
-	"version": "0.0.3",
-	"publisher": "idanp",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/idanpa/vscode-smartmulticursor"
-	},
-	"bugs": {
-		"url": "https://github.com/idanpa/vscode-smartmulticursor/issues"
-	},
-	"icon": "icon.png",
-	"engines": {
-		"vscode": "^1.36.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"keywords": [
-		"cursor",
-		"multi-cursor",
-		"multicursor"
-	],
-	"activationEvents": [
-		"*"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "smartmulticursor.insertCursorBelow",
-				"title": "Insert smart cursor below"
-			},
-			{
-				"command": "smartmulticursor.insertCursorAbove",
-				"title": "Insert smart cursor above"
-			},
-			{
-				"command": "smartmulticursor.lastCursorLeft",
-				"title": "Move last inserted cursor left"
-			},
-			{
-				"command": "smartmulticursor.lastCursorRight",
-				"title": "Move last inserted cursor right"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "smartmulticursor.insertCursorBelow",
-				"key": "ctrl+alt+down",
-				"mac": "cmd+alt+down",
-				"linux": "shift+alt+down",
-				"when": "editorTextFocus"
-			},
-			{
-				"command": "smartmulticursor.insertCursorAbove",
-				"key": "ctrl+alt+up",
-				"mac": "cmd+alt+up",
-				"linux": "shift+alt+up",
-				"when": "editorTextFocus"
-			},
-			{
-				"command": "smartmulticursor.lastCursorLeft",
-				"key": "ctrl+alt+left",
-				"mac": "cmd+alt+left",
-				"linux": "shift+alt+left",
-				"when": "editorTextFocus"
-			},
-			{
-				"command": "smartmulticursor.lastCursorRight",
-				"key": "ctrl+alt+right",
-				"mac": "cmd+alt+right",
-				"linux": "shift+alt+right",
-				"when": "editorTextFocus"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.6",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.36.0",
-		"glob": "^7.1.4",
-		"mocha": "^6.1.4",
-		"typescript": "^3.3.1",
-		"tslint": "^5.12.1",
-		"vscode-test": "^1.0.2"
-	}
+  "name":        "higgycursor",
+  "displayName": "Smart Multicursor",
+  "description": "Yet another context enhanced multicursor",
+  "version":     "0.0.1",
+  "publisher":   "lilole",
+  "license":     "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lilole/vscode-smartmulticursor"
+  },
+  "bugs": {
+    "url": "https://github.com/lilole/vscode-smartmulticursor/issues"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "cursor",
+    "multi-cursor",
+    "multicursor"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "higgycursor.insertCursorBelow",
+        "title":   "Insert smart cursor below"
+      },
+      {
+        "command": "higgycursor.insertCursorAbove",
+        "title":   "Insert smart cursor above"
+      },
+      {
+        "command": "higgycursor.lastCursorLeft",
+        "title":   "Move last inserted cursor left"
+      },
+      {
+        "command": "higgycursor.lastCursorRight",
+        "title":   "Move last inserted cursor right"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "higgycursor.insertCursorBelow",
+        "key":     "alt+down",
+        "mac":     "alt+down",
+        "linux":   "alt+down",
+        "when":    "editorTextFocus"
+      },
+      {
+        "command": "higgycursor.insertCursorAbove",
+        "key":     "alt+up",
+        "mac":     "alt+up",
+        "linux":   "alt+up",
+        "when":    "editorTextFocus"
+      },
+      {
+        "command": "higgycursor.lastCursorLeft",
+        "key":     "alt+left",
+        "mac":     "alt+left",
+        "linux":   "alt+left",
+        "when":    "editorTextFocus"
+      },
+      {
+        "command": "higgycursor.lastCursorRight",
+        "key":     "alt+right",
+        "mac":     "alt+right",
+        "linux":   "alt+right",
+        "when":    "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile":           "tsc -p ./",
+    "watch":             "tsc -watch -p ./",
+    "pretest":           "npm run compile",
+    "test":              "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob":   "^7.1.1",
+    "@types/mocha":  "^5.2.6",
+    "@types/node":   "^10.12.21",
+    "@types/vscode": "^1.36.0",
+    "glob":          "^7.1.4",
+    "mocha":         "^6.1.4",
+    "typescript":    "^3.3.1",
+    "tslint":        "^5.12.1",
+    "vscode-test":   "^1.0.2"
+  }
 }
