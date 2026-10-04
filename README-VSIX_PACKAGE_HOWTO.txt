@@ -1,7 +1,7 @@
 
 1. Install "vsce" package from AUR.
 
-2. Run "vsce package" in this dir.
+2. Run "npm install" and "vsce package" in this dir.
 
 3. Errors about missing commands may occur, e.g. "yarn" might be needed for the build.
 
